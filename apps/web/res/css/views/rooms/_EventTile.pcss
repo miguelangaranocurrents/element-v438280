@@ -296,6 +296,10 @@ $left-gutter: 64px;
 }
 
 .mx_EventTile_body {
+    /* Trap Zalgos. This also lets the body shrink inside the flex annotation wrapper
+       (e.g. edited messages) so wide code blocks don't push the text out of view. */
+    overflow-y: hidden;
+
     pre {
         border: 1px solid transparent;
 
